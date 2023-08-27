@@ -119,7 +119,6 @@ DEPENDENCIES
   jekyll-admin
   jekyll-feed (~> 0.12)
   jekyll-redirect-from
-  jekyll-seo-tag
   jekyll-theme-chirpy
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
