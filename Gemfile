@@ -35,3 +35,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll-admin"
 gem "jekyll-theme-chirpy"
 gem 'jekyll-redirect-from'
+gem 'jekyll-seo-tag'
