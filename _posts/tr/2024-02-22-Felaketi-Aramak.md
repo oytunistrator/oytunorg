@@ -1,5 +1,5 @@
 ---
-title: Felaketi Aramak: Telefon İşletmeciliğinin Başarısız Olması Konusunda Anlatılmamış Hikayeler
+title: Felaketi Aramak
 layout: post
 categories: [Life, Business]
 tags: [life, business]
