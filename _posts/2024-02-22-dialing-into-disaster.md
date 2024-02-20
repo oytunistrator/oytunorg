@@ -1,5 +1,5 @@
 ---
-title: The Untold Stories of Telephony Business Fails
+title: Dialing Into Disaster
 layout: post
 categories: [Life, Business]
 tags: [life, business]
