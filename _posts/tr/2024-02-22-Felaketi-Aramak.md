@@ -5,6 +5,7 @@ categories: [Life, Business]
 tags: [life, business]
 ---
 
+
 Felaketi Aramak: Telefon İşletmeciliğinin Başarısız Olması Konusunda Anlatılmamış Hikayeler
 ---
 
