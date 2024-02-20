@@ -1,5 +1,5 @@
 ---
-title: Why I Choose Linux: Exploring the Power of Open Source
+title: Exploring the Power of Open Source
 layout: post
 categories: [Life, Linux]
 tags: [life, Linux]
