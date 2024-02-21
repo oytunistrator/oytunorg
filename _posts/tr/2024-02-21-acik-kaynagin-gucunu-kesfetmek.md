@@ -5,6 +5,7 @@ categories: [Life, Linux]
 tags: [life, linux]
 ---
 
+
 Neden Linux Kullanıyorum: Açık Kaynağın Gücünü Keşfetmek
 ---
 
