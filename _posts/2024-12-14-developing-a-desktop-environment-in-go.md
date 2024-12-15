@@ -19,11 +19,14 @@ Prerequisites
 
 Before diving in, make sure you have the following:
 
-    A Linux system with an X server running.
-    Go installed (1.20 or later recommended).
-    The xgb and xgbutil packages installed: 
+* A Linux system with an X server running.
+* Go installed (1.20 or later recommended).
+    
+The xgb and xgbutil packages installed: 
 
+```bash
 go get -u github.com/BurntSushi/xgb github.com/BurntSushi/xgbutils
+```
 
 **Step 1: Connecting to the X Server**
 
