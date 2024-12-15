@@ -19,10 +19,10 @@ As a Linux enthusiast, developer, or hardware specialist, knowing how to test yo
 
 Linux's open-source nature and vast array of tools make it an excellent platform for hardware testing. It allows for:
 
-    Diagnosing hardware failures.
-    Monitoring performance metrics.
-    Stress-testing for stability under heavy loads.
-    Validating new hardware compatibility.
+* Diagnosing hardware failures.
+* Monitoring performance metrics.
+* Stress-testing for stability under heavy loads.
+* Validating new hardware compatibility.
 
 **2. Preliminary Checks**
 
@@ -83,9 +83,9 @@ sensors
 Faulty RAM can lead to random crashes or data corruption. The memtest86+ utility is a go-to tool for memory diagnostics.
 Run MemTest86+
 
-    Boot into your system’s GRUB menu.
-    Select the MemTest86+ option.
-    Allow the test to run through multiple passes.
+* Boot into your system’s GRUB menu.
+* Select the MemTest86+ option.
+* Allow the test to run through multiple passes.
 
 If MemTest86+ isn’t available in GRUB, install it:
 
@@ -120,7 +120,9 @@ sudo hdparm -Tt /dev/sda
 ```
 
 For SSDs or more detailed testing, consider fio (Flexible I/O Tester).
-6. Testing Graphics Card (GPU)
+
+**6. Testing Graphics Card (GPU)**
+
 Monitor GPU Information
 
 Use lspci to list your GPU.
