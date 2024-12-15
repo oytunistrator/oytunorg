@@ -3,6 +3,7 @@ title: Repeat things are bad (That’s why, DRY).
 layout: post
 categories: [Life, Developer]
 tags: [life, developer]
+comments: true
 ---
 
 It’s a bad thing to repeat yourself, yeah. For example, to do the same things over and over again. Going to work every day, experiencing the same things every day, eating at the same meal, and avoiding differences. Being different is a good thing. Life, politics and the same things that are repeated under constant pressure. We all live in life. We’re running around, our goals and our goals. This system is trying to get our targets from us. Instead of our goal, it’s a mess of bad people waiting for us to follow the system’s goals. We’re fighting a system that’s afraid of difference.

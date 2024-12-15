@@ -3,6 +3,7 @@ title: Long time ago
 layout: post
 categories: [Life, Developer, Linux]
 tags: [life, developer, linux]
+comments: true
 ---
 
 Before there were these blogs, there were blogger and live journal periods. Back then, when blogs and writing culture was more widespread, my friends who were active on a linux side would update their blogs every day, and make movie and various criticisms. Those were the times when I was just starting to post my first posts and there were no social networks or talk groups yet. Life was not that fast, but it was the first time I stepped into the Linux world. At that time, there were groups fighting over linux distributions. We all used to sit on an IRC channel and fight about linux distributions. There was a generation that buried windows at every opportunity. Linux loving, unix praising and developing. We didn't have a lot of money back then. In order not to pay for windows on our computers that we bought for three cents; we were praising linux. Over time, this praise grew so much that most of us are now rich thanks to linux/unix without realizing it. Most of them even installed linux on cheap computers and forgot that they were constantly praising it. 

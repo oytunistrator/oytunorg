@@ -3,6 +3,7 @@ title: 'Manifesto Part 1: Refusing to live with the judgment of the mind.'
 layout: post
 categories: [Life, Developer]
 tags: [life, developer]
+comments: true
 ---
 
 Everyone prefers a poor quality life today. Almost everyone is living the same style of life like each other’s clone. We accept the impositions brought by the system. We are all born, sent to school by force and receive education. Afterwards, we drift into a working life and run after jobs that are not related to us from morning to evening. In this process, we go to the military, we don’t actually have to, but once the system has imposed on us, we have to do it. We continue to do various jobs and live the lives that others have imposed on us.

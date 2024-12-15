@@ -1,8 +1,7 @@
 ---
 title: 'Data Recovery and Disk Repair in Linux: A Comprehensive Guide'
 layout: post
-comments: false
-toc: true
+comments: true
 categories:
 - Linux
 - Programming

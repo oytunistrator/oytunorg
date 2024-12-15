@@ -1,8 +1,7 @@
 ---
 title: Developing a Desktop Environment in Go
 layout: post
-comments: false
-toc: true
+comments: true
 categories:
 - Linux
 - Programming

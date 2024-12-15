@@ -1,8 +1,7 @@
 ---
 title: 'How to Perform Hardware Testing on Linux: A Comprehensive Guide'
 layout: post
-comments: false
-toc: true
+comments: true
 categories:
 - Linux
 - Programming

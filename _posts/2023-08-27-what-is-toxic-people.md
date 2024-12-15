@@ -3,6 +3,7 @@ title: What is toxic people?
 layout: post
 categories: [Life, Developer]
 tags: [life, developer]
+comments: true
 ---
 
 Even if you don’t now, at some point in your life you’re bound to have come across a person who fits the description. Dealing with such an individual can be difficult and draining, to say the least. In fact, it may challenge what you know about yourself and push you to the limits.

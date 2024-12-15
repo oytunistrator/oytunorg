@@ -3,6 +3,7 @@ title: Dialing Into Disaster
 layout: post
 categories: [Life, Business]
 tags: [life, business]
+comments: true
 ---
 
 

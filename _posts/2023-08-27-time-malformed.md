@@ -3,6 +3,7 @@ title: How is time formed?
 layout: post
 categories: [Life, Time]
 tags: [life, time]
+comments: true
 ---
 
 Time is a moving matter. It is the largest of matter. A core is needed to create time. There is a positive in the nucleus. This positive has been cut off from other times and entered into this nucleus or was forced to break apart by another time period. The nucleus is formed by interacting with the positively empty (neutral) matter. However, this nucleus alone only provides only 1/2 of the movement of the Tar. The bird needs an external negative pole to move.

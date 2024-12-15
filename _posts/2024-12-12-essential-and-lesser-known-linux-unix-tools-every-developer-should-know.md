@@ -1,8 +1,7 @@
 ---
 title: Essential and Lesser-Known Linux/Unix Tools Every Developer Should Know
 layout: post
-comments: false
-toc: true
+comments: true
 categories:
 - Linux
 - Programming

@@ -3,6 +3,7 @@ title: Developer Rights Manifesto
 layout: post
 categories: [Life, Developer]
 tags: [life, developer]
+comments: true
 ---
 
 I’m publishing a developer rights manifesto. They can read and support this manifesto for the purpose of not using developers as slaves.
