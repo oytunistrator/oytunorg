@@ -6,11 +6,11 @@ toc: true
 categories:
 - Linux
 - Programming
-- Go
+- Bash
 tags:
 - linux
 - programming
-- go
+- bash
 ---
 
 As a Linux enthusiast, developer, or hardware specialist, knowing how to test your system's hardware can save you from hours of debugging and ensure optimal performance. Whether you're diagnosing a faulty component, optimizing performance, or stress-testing your build, Linux offers a rich set of tools to analyze your hardware. This guide will walk you through the essential steps and tools to perform effective hardware testing on a Linux system.

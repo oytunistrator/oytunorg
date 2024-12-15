@@ -6,11 +6,11 @@ toc: true
 categories:
 - Linux
 - Programming
-- Go
+- Bash
 tags:
 - linux
 - programming
-- go
+- bash
 ---
 
 In the world of Linux/Unix, there are a variety of well-known tools and commands, ranging from those that are commonly used to more niche and obscure utilities that can be extremely powerful for advanced users. Here's a brief overview of the most widely used and the lesser-known but intriguing tools, explained from the perspective of a developer.
