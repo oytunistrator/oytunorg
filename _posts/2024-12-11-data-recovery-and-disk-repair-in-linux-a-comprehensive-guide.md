@@ -17,6 +17,7 @@ tags:
 ---
 
 In the world of Linux, data recovery and dealing with faulty disks are crucial skills for any system administrator or power user. Disks can fail unexpectedly, leading to data loss, but with the right tools and procedures, it’s often possible to recover lost data and repair the disk. This guide will walk you through some essential practices, including backup strategies, data recovery tools, disk repair commands, and scripts for system maintenance.
+
 1. Proactive Backup Strategies
 
 The best way to handle data loss is to prevent it from happening in the first place. Regular backups are a critical aspect of any system maintenance routine. Here’s a simple bash script that can be used to automate backups of critical directories to an external disk:
