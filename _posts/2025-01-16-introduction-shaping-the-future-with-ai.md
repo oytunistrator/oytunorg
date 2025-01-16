@@ -10,6 +10,8 @@ categories:
 - GPU
 - CPU
 - Hardware
+- Model
+- NLP
 tags:
 - ai
 - programming
