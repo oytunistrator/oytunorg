@@ -35,7 +35,7 @@ The development of AI models has seen a surge in specialized platforms that stre
 
 - **[LM Studio](https://lmstudio.ai/)**: A development environment tailored for training large language models (LLMs) efficiently. LM Studio integrates with cloud-based and local hardware resources, providing flexibility in scaling computational requirements.
 
-- **Other Emerging Tools**: Frameworks like TensorFlow, PyTorch, and ONNX continue to play a pivotal role in AI research and development, enabling everything from custom neural networks to inference optimization.
+- **Other Emerging Tools**: Frameworks like [TensorFlow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/), and [ONNX](https://onnx.ai/) continue to play a pivotal role in AI research and development, enabling everything from custom neural networks to inference optimization.
 
 ### Hardware Considerations: CPU vs. GPU in AI Workflows
 
