@@ -123,7 +123,7 @@ services:
       - ./data:/data
       - ollama:/root/.ollama
       - open-webui:/app/backend/data
-    runtime: nvidia  # Ensures the container uses the GPU
+    #runtime: nvidia  # Ensures the container uses the GPU
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     extra_hosts:
