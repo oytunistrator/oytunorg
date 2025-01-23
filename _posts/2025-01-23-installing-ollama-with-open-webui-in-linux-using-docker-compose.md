@@ -115,19 +115,49 @@ Create a `docker-compose.yml` file with the following content:
 ```yaml
 services:
   open-webui:
-    image: ghcr.io/open-webui/open-webui:ollama
     container_name: open-webui
+    image: ghcr.io/open-webui/open-webui:latest
+    environment:
+      - MODEL_DOWNLOAD_DIR=/models
+      - OLLAMA_API_BASE_URL=http://ollama:11434
+      - OLLAMA_API_URL=http://ollama:11434
+      - LOG_LEVEL=debug
+    volumes:
+      - data:/data
+      - models:/models
+      - open-webui:/config
     ports:
       - "3000:8080"
-    volumes:
-      - ./data:/data
-      - ollama:/root/.ollama
-      - open-webui:/app/backend/data
-    #runtime: nvidia  # Ensures the container uses the GPU
+    depends_on:
+      - ollama
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - ollama-net
+    restart: unless-stopped
+
+  ollama:
+    container_name: ollama
+    image: ollama/ollama:latest
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-    extra_hosts:
-      - "host.docker.internal:host-gateway"  # Adds a host entry for host.docker.internal
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - CUDA_VISIBLE_DEVICES=0
+      - LOG_LEVEL=debug
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+              count: all
+    volumes:
+      - ollama:/root/.ollama
+      - models:/models
+    ports:
+      - "11434:11434"
+    networks:
+      - ollama-net
     restart: unless-stopped
 
   watchtower:
@@ -138,11 +168,18 @@ services:
     environment:
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_POLL_INTERVAL=86400
+    networks:
+      - ollama-net
     restart: unless-stopped
 
 volumes:
+  data:
+  models:
   ollama:
   open-webui:
+
+networks:
+  ollama-net:
 ```
 
 ### Explanation of the `docker-compose.yml`:
