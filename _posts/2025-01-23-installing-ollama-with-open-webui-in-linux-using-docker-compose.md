@@ -117,7 +117,7 @@ version: '3.8'
 
 services:
   open-webui:
-    image: ghcr.io/open-webui/open-webui:latest
+    image: ghcr.io/open-webui/open-webui:ollama
     container_name: open-webui
     ports:
       - "3000:8080"
