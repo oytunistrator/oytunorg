@@ -113,8 +113,6 @@ Now that the dependencies are set up on both Debian and Arch Linux, we will conf
 Create a `docker-compose.yml` file with the following content:
 
 ```yaml
-version: '3.8'
-
 services:
   open-webui:
     image: ghcr.io/open-webui/open-webui:ollama
@@ -125,8 +123,11 @@ services:
       - ./data:/data
       - ollama:/root/.ollama
       - open-webui:/app/backend/data
+    runtime: nvidia  # Ensures the container uses the GPU
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
+    extra_hosts:
+      - "host.docker.internal:host-gateway"  # Adds a host entry for host.docker.internal
     restart: unless-stopped
 
   watchtower:
