@@ -1,5 +1,5 @@
 ---
-title: Python Installation, Django Setup, and React.js Integration
+title: Python Installation, Django Setup and React.js Integration
 layout: post
 comments: true
 toc: true
