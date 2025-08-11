@@ -13,62 +13,89 @@ tags:
 - business
 ---
 
-# Introduction 
+We live in a world obsessed with networking. Entire industries are built on conferences, meetups, LinkedIn connections, and “let’s grab coffee sometime” emails. 
 
-Every job application is more than just sending a CV — it’s your first interaction with a potential employer. Yet, many candidates unknowingly make mistakes that significantly reduce their chances, even if they are perfectly qualified. Let’s explore the most common mistakes I’ve seen (and sometimes made myself) — and how to replace them with smarter, more effective actions.
+The advice is everywhere:
 
-**Mistake 1:** Sending the Same Resume to Every Job
+    “It’s not what you know, it’s who you know.” 
 
-Too many applicants use one “master CV” for every role, hoping it will fit all. Unfortunately, recruiters can spot a generic resume in seconds. This approach signals a lack of effort and focus.
+But here’s the uncomfortable truth: networking, as most people practice it, is massively overrated.
+# The False Promise of Endless Connections
 
-**The Fix:** Tailor your resume for each application.
+We’ve been sold the idea that the bigger your network, the better your chances at success. So we chase more contacts, more followers, more “visibility.”
 
-- Highlight the skills and achievements most relevant to the job description.
-- Use keywords from the posting — but naturally, not as a word dump.
-- Remove irrelevant details that distract from your fit for the role.
+But in reality, most of these connections are:
 
-**Mistake 2:** Writing a Cover Letter That Says Nothing New
+- **Shallow** — They remember your face but not your value.
+- **One-sided** — You remember them because you need something; they don’t remember you at all.
+- **Disposable** — They vanish the moment there’s nothing in it for them.
 
-A cover letter that repeats your resume is a wasted opportunity. Worse, some candidates copy generic templates found online without adding their voice.
+Having a long list of names doesn’t mean you have influence, opportunities, or real support. It means you have a list of people who might recognize you in passing.
 
-**The Fix:** Use your cover letter to tell a story.
+# Networking as a Distraction
 
-- Explain why you want this role at this company.
-- Share a specific example that demonstrates how you solve problems.
-- Keep it concise — one page is more than enough.
+**Here’s the danger: networking can easily become a socially acceptable form of procrastination.**
 
-**Mistake 3:** Ignoring the Company’s Culture and Values
+It feels productive to attend events, hand out business cards, and grow your LinkedIn. But you might be avoiding the hard, often lonely work of:
 
-Applying without researching the company can lead to awkward interviews and mismatched expectations. Employers value candidates who show genuine interest in their mission and work environment.
+- Building deep expertise in your field.
+- Creating something valuable and original.
+- Delivering results that speak for themselves.
 
-**The Fix:** Do your homework.
+When you substitute activity for impact, your network becomes a vanity metric.
 
-- Read the company’s “About Us” page, recent news, and LinkedIn posts.
-- Identify a value or project you admire and refer to it in your application.
-- Show that you see yourself as part of their future.
+# Skills Outlast Social Circles
 
-**Mistake 4:** Applying Without Meeting Most Requirements
+Contacts can disappear overnight — people change jobs, industries shift, algorithms bury your profile. But skills? Real, hard-earned competence? That stays with you.
 
-While you don’t need to meet every single requirement, sending applications for jobs far outside your qualifications wastes both your time and the recruiter’s.
+A strong network may open a door. But without skills, walking through that door just exposes you.
 
-**The Fix:** Be strategic.
+In high-stakes situations, nobody hires you or partners with you because they “owe you one.” They do it because they trust your ability to deliver.
 
-- Apply if you meet at least 70–80% of the core skills listed.
-- If you’re missing something, acknowledge it and explain how you’re addressing it.
-- Focus on roles where your transferable skills can shine.
+# The Trust Equation
 
-**Mistake 5:** Being Too Passive After Applying
+Relationships in business aren’t built on small talk alone — they’re built on trust plus value.
 
-Many applicants hit “Submit” and then wait in silence, hoping for a call. This is a missed opportunity to stand out.
+Trust comes from:
 
-**The Fix:** Follow up professionally.
+- Keeping promises.
+- Showing consistency over time.
+- Demonstrating integrity when it’s inconvenient.
 
-- Send a polite email to the recruiter or hiring manager after a week or two.
-- Engage with the company’s LinkedIn content to stay visible.
-- Keep communication short, positive, and respectful.
+Value comes from:
 
-**Final Thoughts**
+- Solving problems others can’t.
+- Making things better, faster, or easier.
+- Bringing ideas and execution, not just presence.
 
-Job applications are not a numbers game; they’re about precision, research, and alignment. A well-targeted application shows employers that you’re not just looking for a job — you’re looking for this job. And that difference can set you apart from a hundred other applicants.
+Without both, networking is just name collecting.
+# From “Who You Know” to “Who Knows What You Can Do”
 
-What other mistakes (or clever fixes) have you seen in the hiring process? Let’s discuss in the comments.
+**The truth is, you don’t need the biggest network. You need the right network — one built naturally through your work, not forced through constant outreach.**
+
+When you focus on being great at what you do, people talk. Opportunities spread. Introductions happen organically.
+
+The irony? 
+
+The less you chase “networking” for its own sake, the more powerful your network becomes.
+
+# A Better Approach
+
+Instead of asking: “Who should I meet next?” 
+
+Ask: “What can I create, improve, or solve that will make people want to meet me?”
+
+Instead of measuring success by connections added, measure it by:
+
+- Projects completed. 
+- Problems solved.
+- People helped.
+
+Because when you build something worth noticing, the right people will notice.
+# Final Thought
+
+**Networking can be valuable — but only when built on a foundation of trust, value, and competence. Without that foundation, it’s just noise.**
+
+So maybe it’s time we stop glorifying network building as the ultimate career strategy. Instead, let’s glorify becoming valuable enough that the right network builds itself around us.
+
+Because in the end: It’s not what you know. It’s not who you know. It’s who knows what you can do — and trusts you to do it.
