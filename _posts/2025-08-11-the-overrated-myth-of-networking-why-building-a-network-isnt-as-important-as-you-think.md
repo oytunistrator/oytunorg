@@ -13,11 +13,11 @@ tags:
 - business
 ---
 
-We live in a world obsessed with networking. Entire industries are built on conferences, meetups, LinkedIn connections, and “let’s grab coffee sometime” emails. 
+We live in a world obsessed with networking. Entire industries are built on conferences, meetups, LinkedIn connections, and “let’s grab coffee sometime” emails.
 
 The advice is everywhere:
 
-    “It’s not what you know, it’s who you know.” 
+    “It’s not what you know, it’s who you know.”
 
 But here’s the uncomfortable truth: networking, as most people practice it, is massively overrated.
 # The False Promise of Endless Connections
@@ -75,19 +75,19 @@ Without both, networking is just name collecting.
 
 When you focus on being great at what you do, people talk. Opportunities spread. Introductions happen organically.
 
-The irony? 
+The irony?
 
 The less you chase “networking” for its own sake, the more powerful your network becomes.
 
 # A Better Approach
 
-Instead of asking: “Who should I meet next?” 
+Instead of asking: “Who should I meet next?”
 
 Ask: “What can I create, improve, or solve that will make people want to meet me?”
 
 Instead of measuring success by connections added, measure it by:
 
-- Projects completed. 
+- Projects completed.
 - Problems solved.
 - People helped.
 
