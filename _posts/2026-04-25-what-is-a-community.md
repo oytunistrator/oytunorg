@@ -41,7 +41,7 @@ In an era of data mining, your community should be a sanctuary.
 
 ### 5. Content Integrity: No Politics, No Hate
 
-- To keep a professional and welcoming environment, draw a hard line. Political debates, religious arguments, racism, and harassment should have zero tolerance. These are the fastest ways to make your best members leave. Use automated tools to catch these keywords before they even hit the main feed.
+To keep a professional and welcoming environment, draw a hard line. Political debates, religious arguments, racism, and harassment should have zero tolerance. These are the fastest ways to make your best members leave. Use automated tools to catch these keywords before they even hit the main feed.
 
 ### 6. The Economics of Growth: Why Free?
 
