@@ -22,7 +22,8 @@ Healthy communication starts with clear boundaries. You must establish your rule
 
 Don’t throw everyone into one big pot.
 
-- Divide by Interest: General channels are for "hellos." For everything else, segment your topics. If people are talking about design in a coding channel, move the conversation or ask the user to switch channels. The Admin War-Room: Create private spaces for your admins and moderators. You need a place to discuss strategy, troubleshoot conflicts, and align on decisions without the "public" watching.
+- Divide by Interest: General channels are for "hellos." For everything else, segment your topics. If people are talking about design in a coding channel, move the conversation or ask the user to switch channels. 
+- The Admin War-Room: Create private spaces for your admins and moderators. You need a place to discuss strategy, troubleshoot conflicts, and align on decisions without the "public" watching.
 
 ### 3. Moderation: Human Touch vs. Automation
 
