@@ -35,7 +35,6 @@ Once installed, fire up your terminal and run a single command to download Qwen 
 ```bash
 ollama server
 ollama run qwen2.5:7b
-
 ```
 
 *(Quick tip: Depending on your GPU's VRAM, you can choose between the `3b`, `7b`, or `14b` variants. For most mid-tier setups, the 7B model hits the absolute sweet spot between speed and intelligence.)*
