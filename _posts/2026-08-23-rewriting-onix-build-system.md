@@ -10,7 +10,7 @@ Developing an independent Linux distribution sounds romantic from the outside. *
 
 The reality is starkly different: endless build logs, cryptic dependency chains, hours of waiting for ISO packaging, and above all, **an intense sense of solitude**.
 
-Over the past few weeks, I’ve been grinding non-stop on OnixOS. Today, I’m announcing a massive milestone: I have fundamentally rewritten the **Onix Build System** the core engine behind the distribution—completely from the ground up.
+Over the past few weeks, I’ve been grinding non-stop on OnixOS. Today, I’m announcing a massive milestone: I have fundamentally rewritten the **Onix Build System** the core engine behind the distribution completely from the ground up.
 
 This isn't just a routine release note. It's a deep dive into why this rewrite was necessary, how we transitioned to a true multi-architecture system, and what it actually takes to solo-refactor a core Linux toolchain.
 
