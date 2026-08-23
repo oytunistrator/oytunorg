@@ -10,15 +10,15 @@ Building a public-interest project to address urban noise pollution sounds rewar
 
 In practice, it means sifting through query logs, fighting file upload bugs late into the night, and tackling technical debt head-on to build something that lasts.
 
-Over the past few weeks, I’ve been heads-down refactoring **NoiseApp** the underlying platform powering [Gürültü Dedektifi](https://gurultudedektifi.com/). Today, I’m sharing what changed under the hood, why this refactor was long overdue, and what new features made the cut.
+Over the past few weeks, I’ve been heads-down refactoring **NoiseApp**—the underlying platform powering [Gürültü Dedektifi](https://gurultudedektifi.com/). Today, I’m sharing what changed under the hood, why this refactor was long overdue, and what new features made the cut.
 
 ---
 
 ### Refining the Stack & Cleaning Up Tech Debt
 
-When you work on a project over time, code rot is inevitable. In earlier iterations of NoiseApp, Musa and I collaborated closely on the frontend. While that got the platform off the ground, a mix of legacy frontend choices and backend tight-coupling eventually caught up with us.
+When you work on a project over time, code rot is inevitable. In earlier iterations of NoiseApp, [Musa](https://x.com/musayazlik) and I collaborated closely on the frontend. While that got the platform off the ground, a mix of legacy frontend choices and backend tight-coupling eventually caught up with us.
 
-As features grew, subtle bugs began surfacing ranging from UI state sync issues to brittle API responses. Adding new features on top of these rough edges felt like walking through mud. I had two choices: keep patching over existing bugs or take full ownership of a proper refactor.
+As features grew, subtle bugs began surfacing—ranging from UI state sync issues to brittle API responses. Adding new features on top of these rough edges felt like walking through mud. I had two choices: keep patching over existing bugs or take full ownership of a proper refactor.
 
 I stepped in as lead developer to clean up the debt, rewrite the problematic components, and establish a maintainable codebase.
 
@@ -26,7 +26,7 @@ I stepped in as lead developer to clean up the debt, rewrite the problematic com
 
 ### What Changed in the Refactor
 
-This cycle wasn't about starting from a blank page it was about modularizing existing workflows, eliminating UI/backend bugs, and adding long-awaited core capabilities:
+This cycle wasn't about starting from a blank page—it was about modularizing existing workflows, eliminating UI/backend bugs, and adding long-awaited core capabilities:
 
 #### 1. Native Multi-Language (i18n) Support
 Noise pollution isn't localized to a single region or language. The platform now features proper internationalization support, decoupling user-facing strings from application logic to serve a broader audience seamlessly.
@@ -57,6 +57,6 @@ If you look at the commit log, it reflects focused execution: modularizing route
 * **Official Website:** [gurultudedektifi.com](https://gurultudedektifi.com/)
 * **Twitter / X:** [@GurultuDedektif](https://x.com/GurultuDedektif)
 
-Projects like this don't improve on feature requests alone they move forward through execution. 
+Projects like this don't improve on feature requests alone—they move forward through execution. 
 
 *Happy Hacking.*
