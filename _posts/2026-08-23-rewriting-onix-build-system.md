@@ -10,7 +10,7 @@ Developing an independent Linux distribution sounds romantic from the outside. *
 
 The reality is starkly different: endless build logs, cryptic dependency chains, hours of waiting for ISO packaging, and above all, **an intense sense of solitude**.
 
-Over the past few weeks, I’ve been grinding non-stop on OnixOS. Today, I’m announcing a massive milestone: I have fundamentally rewritten the **Onix Build System**—the core engine behind the distribution—completely from the ground up.
+Over the past few weeks, I’ve been grinding non-stop on OnixOS. Today, I’m announcing a massive milestone: I have fundamentally rewritten the **Onix Build System** the core engine behind the distribution—completely from the ground up.
 
 This isn't just a routine release note. It's a deep dive into why this rewrite was necessary, how we transitioned to a true multi-architecture system, and what it actually takes to solo-refactor a core Linux toolchain.
 
@@ -30,7 +30,7 @@ I chose the latter. I rewrote the entire system by myself.
 
 ### Key Architectural Overhauls
 
-The goal of this refactor wasn't just code cleanup—it was to establish a rock-solid foundation for the future of OnixOS. Here is what changed under the hood:
+The goal of this refactor wasn't just code cleanup. It was to establish a rock-solid foundation for the future of OnixOS. Here is what changed under the hood:
 
 #### 1. Transition to Native Multiarch Support
 The old build pipeline was hardcoded around a single target architecture. The new engine introduces **first-class multiarch support**.
@@ -38,7 +38,7 @@ The old build pipeline was hardcoded around a single target architecture. The ne
 * **Cross-Compilation & Native Pipelines:** The system cleanly handles architecture-specific flags, cross-toolchains, and target-specific package resolution seamlessly.
 
 #### 2. Modular & Object-Oriented Pipeline Architecture
-The collection of loose, fragile shell scripts was completely discarded. The build system now features an extensible, object-oriented pipeline written cleanly in Python. Each stage—from fetching sources and chroot sandboxing to squashfs generation and ISO layout creation—is an isolated, testable unit.
+The collection of loose, fragile shell scripts was completely discarded. The build system now features an extensible, object-oriented pipeline written cleanly in Python. Each stage from fetching sources and chroot sandboxing to squashfs generation and ISO layout creation is an isolated, testable unit.
 
 #### 3. Strict Isolation and Sandboxing
 To ensure 100% reproducible builds, environment leaks from the host machine have been eliminated. Chroot and namespace isolation were redesigned to guarantee that target packages only see explicitly declared dependencies.
@@ -55,7 +55,7 @@ If you take a look at our recent commit logs, you'll see a single story: a solo 
 * **GitLab Repository:** [onix-os / Onix Build System](https://gitlab.com/onix-os/onix-build-system)
 * **Official Website:** [onix-project.com](http://onix-project.com)
 
-Aspirational open-source projects don't survive on discussion threads; they survive on execution. When no one steps up to write the core infrastructure, you don't wait around—you become the army.
+Aspirational open-source projects don't survive on discussion threads; they survive on execution. When no one steps up to write the core infrastructure, you don't wait around you become the army.
 
 ---
 
