@@ -84,10 +84,15 @@
   <script>
     (() => {
       const toggle = document.getElementById('theme-toggle');
-      if (!toggle || typeof Theme === 'undefined') return;
+      const root = document.documentElement;
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+      if (!toggle) return;
+
+      const getTheme = () =>
+        root.getAttribute('data-mode') || (systemTheme.matches ? 'dark' : 'light');
 
       const updateToggle = () => {
-        const dark = Theme.visualState === Theme.DARK;
+        const dark = getTheme() === 'dark';
         toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
         toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
         toggle.querySelector('i').className = dark ? 'fas fa-sun' : 'fas fa-moon';
@@ -96,8 +101,15 @@
 
       updateToggle();
       toggle.addEventListener('click', () => {
-        Theme.flip();
+        const nextTheme = getTheme() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-mode', nextTheme);
+        sessionStorage.setItem('mode', nextTheme);
+        window.postMessage({ id: 'theme-mode' }, '*');
         updateToggle();
+      });
+
+      systemTheme.addEventListener('change', () => {
+        if (!sessionStorage.getItem('mode')) updateToggle();
       });
     })();
   </script>
