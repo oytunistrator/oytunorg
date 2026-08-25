@@ -88,8 +88,18 @@
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
       if (!toggle) return;
 
-      const getTheme = () =>
-        root.getAttribute('data-mode') || (systemTheme.matches ? 'dark' : 'light');
+      const getTheme = () => {
+        if (typeof Theme !== 'undefined') {
+          if ('resolvedTheme' in Theme) return Theme.resolvedTheme;
+          if ('visualState' in Theme) return Theme.visualState;
+        }
+
+        return (
+          root.getAttribute('data-bs-theme') ||
+          root.getAttribute('data-mode') ||
+          (systemTheme.matches ? 'dark' : 'light')
+        );
+      };
 
       const updateToggle = () => {
         const dark = getTheme() === 'dark';
@@ -102,14 +112,23 @@
       updateToggle();
       toggle.addEventListener('click', () => {
         const nextTheme = getTheme() === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-mode', nextTheme);
-        sessionStorage.setItem('mode', nextTheme);
-        window.postMessage({ id: 'theme-mode' }, '*');
+
+        if (typeof Theme !== 'undefined' && 'update' in Theme) {
+          Theme.update(nextTheme);
+        } else if (typeof Theme !== 'undefined' && 'flip' in Theme) {
+          Theme.flip();
+        } else {
+          root.setAttribute('data-bs-theme', nextTheme);
+          root.setAttribute('data-mode', nextTheme);
+          localStorage.setItem('theme', nextTheme);
+          sessionStorage.setItem('mode', nextTheme);
+        }
+
         updateToggle();
       });
 
       systemTheme.addEventListener('change', () => {
-        if (!sessionStorage.getItem('mode')) updateToggle();
+        updateToggle();
       });
     })();
   </script>
