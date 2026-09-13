@@ -15,7 +15,7 @@ The project is still changing, so I am not going to present it as a finished pro
 
 [NanoSIEM](https://huggingface.co/oytunistrator/nano-siem-model) is a cybersecurity RAG, SIEM analysis, and local GGUF model project. The goal is to make security information easier to query locally without pretending that a language model is a scanner, an incident responder, or a legal authority.
 
-The implementation is being developed in the `csap-ai-model` workspace. It is designed around a 1B–8B instruct model, although the current profile is aimed at the smaller end of that range. This is mainly a hardware decision. I want to be able to train and test the model on a realistic CUDA machine, not only on a large server that is unavailable during normal development.
+The implementation is being developed as an independent NanoSIEM project. It is designed around a 1B–8B instruct model, although the current profile is aimed at the smaller end of that range. This is mainly a hardware decision. I want to be able to train and test the model on a realistic CUDA machine, not only on a large server that is unavailable during normal development.
 
 The model is paired with a [public dataset on Hugging Face](https://huggingface.co/datasets/oytunistrator/nano-siem-dataset). I am keeping the source and retrieval metadata with each record. The ingestion code also keeps retrieval material separate from examples that are suitable for training.
 
