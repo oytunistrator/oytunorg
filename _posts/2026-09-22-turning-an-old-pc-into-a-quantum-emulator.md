@@ -619,6 +619,7 @@ old PC into a QuantumEmulator really means.
 - [Cirq simulation documentation](https://quantumai.google/cirq/simulate/simulation)
 - [Cirq Quantum Virtual Machine](https://quantumai.google/cirq/simulate/quantum_virtual_machine)
 - [Google qsim](https://quantumai.google/qsim)
+- [Quantum Studio](http://www.quantum-studio.net/)
 - [PennyLane circuit and device documentation](https://docs.pennylane.ai/en/stable/introduction/circuits.html)
 - [Munich Quantum Toolkit handbook](https://mqt.readthedocs.io/en/latest/)
 - [Quirk browser-based circuit simulator](https://algassert.com/quirk)
