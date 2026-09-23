@@ -188,6 +188,51 @@ virtualisation hosts. Keeping it independent means that a problem in an
 application workload does not automatically become a problem in the network
 boundary.
 
+## The new NAS: QNAP TS-216G
+
+The old Xeon system is no longer responsible for NAS duties. I moved that role
+to a QNAP TS-216G and gave the storage a clearer boundary of its own. The NAS
+now contains two 32 TB hard disks configured as a mirror, or RAID 1.
+
+The QNAP configuration is:
+
+| Component | Specification |
+| --- | --- |
+| Model | QNAP TS-216G |
+| Drive bays | 2 × 3.5-inch SATA |
+| Storage | 2 × 32 TB HDD |
+| RAID layout | RAID 1 / mirror |
+| Usable capacity | Approximately one disk's capacity |
+| Memory | 4 GB onboard RAM |
+| CPU | ARM quad-core Cortex-A55, 2.0 GHz |
+| Network | 1 × 2.5GbE + 1 × 1GbE |
+| Operating system | QTS |
+
+In a mirror, both disks contain the same data. This means that a single disk
+failure should not immediately make the volume unavailable; the failed disk can
+be replaced and the array can be rebuilt. The trade-off is that two 32 TB disks
+do not provide 64 TB of usable space. The usable capacity is roughly the
+capacity of one disk, before filesystem and system overhead.
+
+RAID 1 is useful for availability, but it is not a backup. Accidental deletion,
+filesystem corruption, malware, or a problem that affects both disks can still
+destroy the data. I therefore treat the QNAP as the central NAS and file
+access point, while keeping separate copies of important data where necessary.
+
+The TS-216G is a small two-bay system, but it is a better fit for this role than
+the old Xeon machine. It uses considerably less power, occupies less space, and
+does not require a general-purpose workstation platform just to serve files.
+Its 2.5GbE interface is also useful for faster transfers inside the local
+network, while the additional 1GbE port is available for a separate network
+path or management use.
+
+The drive bays are hot-swappable, which makes disk replacement less disruptive.
+The QNAP also gives the storage role its own management interface and storage
+services instead of making the old test workstation responsible for file
+sharing. The official [QNAP TS-216G specifications](https://www.qnap.com/en/product/ts-216g)
+list the device's two-bay design, ARM processor, onboard memory, and network
+interfaces.
+
 ## Power protection and UPS layout
 
 The servers and network equipment are not connected directly to the wall. I
@@ -217,12 +262,21 @@ cut, depending on the active load and which services are running. That range is
 not a promise for every possible workload; it is the practical operating range
 I observe across the homelab.
 
+The UPS units also help with power efficiency in the way the infrastructure is
+operated. They do not create electricity or make the servers consume less than
+their hardware requires, but they prevent repeated hard shutdowns, emergency
+restarts, and unnecessary recovery cycles during unstable power. They also
+provide a more stable power path for the equipment. In practice, this reduces
+wasted energy and avoids the extra consumption caused by bringing several
+servers and services back up after every short interruption.
+
 ## The electronics and experiment workstation
 
 One of the oldest systems in the lab used to be my NAS server. It had once
-worked inside the cabinet and contained a 4 TB HDD. I moved the remaining
-hardware into a small case and turned it into a compact workstation for
-electronics, repair work, and physical hardware testing.
+worked inside the cabinet and contained a 4 TB HDD. After moving the NAS role
+to the QNAP, I moved the remaining hardware into a small case and turned it
+into a compact workstation for electronics, repair work, and physical hardware
+testing.
 
 Its current hardware is:
 
