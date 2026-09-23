@@ -143,6 +143,12 @@ services run in a way that allows work to be distributed and scaled behind the
 scenes. I generally expose services through the web layer and route requests
 through a proxy to the appropriate Docker workload.
 
+Using four ThinkCentre M910q systems also gives me a modest saving compared
+with keeping larger, older systems running for the same container workloads.
+The saving is not dramatic enough to call it a major financial optimisation,
+but the machines use less space and generally require less power. Across a
+long-running homelab, that difference is still worthwhile.
+
 This arrangement gives me a useful separation of concerns. The proxy does not
 need to know how every service is implemented. A service can be moved to
 another node, replicated, or restarted without changing the public entry point
@@ -349,6 +355,12 @@ complexity:
 - One of the 5 kVA UPS units
 - Other unused hardware from around the house
 - 32U Lande rack cabinet
+
+Some of the systems I sold had remained from older client work. They were
+useful at the time, but I no longer had a practical reason to keep them in my
+own infrastructure. Once their projects were finished and the hardware was no
+longer needed for support or testing, selling them was more sensible than
+letting them occupy space and consume power indefinitely.
 
 The older PowerEdge R740xd should be understood as a previous unit, not the
 current production server described above. Keeping multiple large rack servers
