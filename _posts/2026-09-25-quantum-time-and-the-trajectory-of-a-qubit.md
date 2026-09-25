@@ -327,24 +327,18 @@ step counter is not automatically physical time. To map one to the other, we
 must define the system's frequency, pulse calibration, sampling interval, and
 error model.
 
-## The alternative view: absence is not the same as non-existence
+## Observation is not the whole state
 
-There is a philosophical insight behind the original notes that is worth
-keeping, provided it is stated carefully:
+The original notes also make a philosophical point, but it needs a careful
+boundary. A measurement reports an outcome in a chosen basis at a chosen time;
+it does not describe every property the state may have in another basis, nor
+does it reveal an unmeasured trajectory in full.
 
-> Not seeing a state in a particular measurement is not the same as proving
-> that the state had no physical description before the measurement.
-
-Quantum mechanics does not allow us to replace evidence with desire. A state
-that is not observed in one basis may have a non-zero amplitude in another
-basis, or it may have been destroyed by decoherence, reset, or measurement.
-The correct response is to change the experimental question, choose an
-appropriate basis, repeat the preparation, and compare the observations with a
-model.
-
-That is the useful meaning of “lifting the curtain”. We do not see reality by
-wanting a particular result. We see more of it by designing a measurement that
-can distinguish competing explanations.
+That limitation is not permission to replace evidence with desire. A state may
+have a non-zero amplitude in another basis, or its coherence may have been
+destroyed by decoherence, reset, or measurement. The scientific response is to
+change the experimental question, choose an appropriate basis, repeat the
+preparation, and compare the observations with a model.
 
 ## Conclusion: follow the trajectory, then trust the measurement
 
