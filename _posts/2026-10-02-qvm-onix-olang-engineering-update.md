@@ -78,7 +78,23 @@ The QVFile format is intentionally a small project manifest. The file must be na
 }
 ```
 
-This example follows the repository's [test/qvfile.qv fixture](https://gitlab.com/oytunistrator/qvm-cli/-/blob/main/test/qvfile.qv), with the corresponding [test/programs/bell.qs program](https://gitlab.com/oytunistrator/qvm-cli/-/blob/main/test/programs/bell.qs). The `.qs` file contains an OpenQASM 3 Bell circuit: it creates two qubits, applies `h` and `cx`, and measures them into two classical bits. The QVFile connects that program to a logical machine and a shot count. The loader rejects absolute program paths, paths that escape the project root, unsupported devices or instruction sets, duplicate identifiers, invalid qubit limits, and missing program files. This keeps project configuration separate from the QCore image produced by `qvm build`.
+This is the same structure used by the QVM test fixture. The referenced `programs/bell.qs` file can be written as follows:
+
+```qasm
+OPENQASM 3.0;
+include "stdgates.inc";
+qubit[2] q;
+bit[2] c;
+h q[0];
+cx q[0], q[1];
+c = measure q;
+```
+
+The first line selects OpenQASM 3.0. The standard-gates include makes the gate names available. `qubit[2] q` allocates two quantum wires, and `bit[2] c` allocates two classical measurement bits. The Hadamard gate puts the first qubit into a superposition; the controlled-X gate entangles the second qubit with it; and the final measurement writes the result into `c`. An ideal Bell-state run should therefore produce matching classical results, primarily `00` and `11`.
+
+The QVFile connects this program to a logical machine and a shot count. `name` identifies the project, `version` selects the manifest schema, `machines` declares the execution contract, and `jobs` selects the program and number of repetitions. `backend`, `instruction_set`, `device`, `qubits`, `precision`, and `max_steps` describe the machine limits; `seed` makes the measurement sequence reproducible when deterministic seeded execution is requested.
+
+The loader rejects absolute program paths, paths that escape the project root, unsupported devices or instruction sets, duplicate identifiers, invalid qubit limits, and missing program files. This keeps project configuration separate from the QCore image produced by `qvm build`.
 
 QVM also has a separate supervisor lifecycle. `qvm serve` starts a local Unix-socket control plane and uses the current directory as its runtime root; it does not require a QVFile just to start the supervisor. A later `run` or detached `boot` request loads the QVFile lazily. Detached control, active `ps`, and `stop` require a live supervisor health response, so a stale socket or PID file is not treated as proof that a service is running.
 
