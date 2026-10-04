@@ -144,6 +144,30 @@ avoid showing it off, and prefer a simple life, yet still be treated as if they
 are doing something wrong because they are not performing the expected social
 role.
 
+When we keep directing our resources toward small daily comforts and expensive
+luxuries, it becomes harder to focus on long-term goals. We pay large companies
+for things we may only want for a short moment, while they turn those repeated
+payments into more capital. If we do not use our resources carefully and leave
+room for a simpler life, we can become trapped in the machinery of consumption.
+The temporary pleasure of buying something can cost us time, savings, and the
+ability to work toward what we actually want.
+
+The more useful questions are different: What do I want to produce? What do I
+want to learn? What do I genuinely want in my life, and which goals deserve my
+limited time and resources? Spending our lives trying to keep up with somebody
+else's luxury and display means spending our own future on a race we did not
+choose.
+
+This week also brought a fund crisis in which people lost money and resources.
+I am not treating that as a reason to make a financial prediction, but it was a
+clear reminder that many services we depend on are controlled by somebody else.
+If a company changes its terms, freezes access, or shuts down a service, users
+can be left with very little control over what they thought they owned or could
+rely on. That is why I do not want to become completely dependent on expensive
+products, convenient platforms, or any single provider. The more important
+parts of life should remain connected to our own skills, savings, projects, and
+choices.
+
 I do not think everyone has to live according to somebody else's taste. A
 simple life can leave room for maintaining a distribution, building software,
 and following ideas that may not produce an immediate financial return. Buying
