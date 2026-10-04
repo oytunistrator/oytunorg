@@ -26,10 +26,11 @@ that a generic ARM kernel is enough to boot every phone. A Kubernetes worker
 needs a different security boundary from a system intended for daily desktop
 use.
 
-The profiles make these decisions visible in source code. Their README files,
-package lists, build scripts, and TODO documents describe both the intended
-result and the remaining work. That is healthier than calling every generated
-image finished simply because a build script can produce a file.
+The profiles make these decisions visible in source code. Their README files and
+build definitions describe both the intended result and the remaining work. The
+TODO documents make the unfinished parts explicit. That is healthier than
+calling every generated image finished simply because a build script can produce
+a file.
 
 ## OnixOS Kubernetes Edition
 
@@ -41,9 +42,9 @@ has two roles:
   release and iPXE flow.
 
 The runtime policy deliberately removes SSH, interactive shells, and package
-managers from the target root. Kubernetes, Docker, Podman, KubeVirt, and
-libvirt are represented through typed API and provider boundaries instead of
-being managed by logging into the machine and running arbitrary shell commands.
+managers from the target root. Kubernetes, Docker, Podman, KubeVirt, and libvirt
+are represented through typed API and provider boundaries. They are not managed
+by logging into the machine and running arbitrary shell commands.
 
 The operator workflow is exposed through `oksctl`. A small configuration flow
 looks like this:
@@ -61,11 +62,11 @@ oksctl workers list
 ```
 
 The profile currently builds for `x86_64`. It emits role-specific raw images,
-VM and cloud format artifacts, platform manifests, and an iPXE bundle for the
-worker. The repository is careful about the boundary between an artifact and a
-finished deployment: the master does not yet publish release files or
-configure DHCP, cloud artifacts are marked as not provider-ready, and the
-installed-disk and rollback path is separate future work.
+VM and cloud artifacts, platform manifests, and an iPXE bundle for the worker.
+The repository is careful about the boundary between an artifact and a finished
+deployment. The master does not yet publish release files or configure DHCP.
+Cloud artifacts are marked as not provider-ready, while the installed-disk and
+rollback path remain separate future work.
 
 That honesty matters for an infrastructure profile. A generated `.img` file is
 not the same thing as a validated Kubernetes cluster. The current profile has a
@@ -107,9 +108,9 @@ those limits instead of hiding them behind a long application list.
 ## OnixOS Mobile Edition
 
 The Mobile profile is built around KDE Plasma Mobile and a Wayland session. It
-includes touch-friendly input, SDDM autologin, NetworkManager, ModemManager,
-Bluetooth, PipeWire, power management, camera support, and basic mobile KDE
-applications.
+includes touch-friendly input and SDDM autologin, together with the services
+needed for networking, modems, Bluetooth, audio, power management, and cameras.
+It also includes basic mobile KDE applications.
 
 It declares three build architectures:
 
@@ -120,9 +121,10 @@ armv7h   32-bit ARM development boards and compatible devices
 ```
 
 Each target produces a UEFI image and a compressed root filesystem archive.
-The image is intentionally generic. A phone still needs its own kernel, device
-tree, firmware, bootloader layout, and partition scheme. The profile does not
-claim that selecting `aarch64` automatically makes every ARM phone bootable.
+The image is intentionally generic. A phone still needs its own kernel and
+device tree, as well as matching firmware, bootloader layout, and partition
+scheme. The profile does not claim that selecting `aarch64` automatically makes
+every ARM phone bootable.
 
 This is why the repository now has device profile records for hardware such as
 the PinePhone, PinePhone Pro, Librem 5, and Samsung Galaxy S3. Those records
@@ -132,25 +134,25 @@ not a substitute for booting and validating each device.
 ## A note from the week behind the code
 
 This work started in the middle of an ordinary winter week. We spent more time
-indoors, and while meeting friends at a cafe to talk about artificial
-intelligence and networking, I started thinking about the Kubernetes profile.
+indoors. While meeting friends at a cafe to talk about artificial intelligence
+and networking, I started thinking about the Kubernetes profile.
 The conversation also reminded me how easily technical discussions become a
 discussion about money, status, and who is considered successful.
 
-Some people treat visible consumption as proof of value. They praise wealth,
-reduce every subject to a salary or a bank balance, and look down on anyone
-whose life does not follow that pattern. A person can have a stable situation,
-avoid showing it off, and prefer a simple life, yet still be treated as if they
-are doing something wrong because they are not performing the expected social
-role.
+Some people treat visible consumption as proof of value. They praise wealth and
+reduce every subject to a salary or a bank balance. They also look down on
+anyone whose life does not follow that pattern. A person can live in a stable
+situation without showing it off. They may prefer a simple life and still be
+treated as if they are doing something wrong because they are not performing the
+expected social role.
 
 When we keep directing our resources toward small daily comforts and expensive
 luxuries, it becomes harder to focus on long-term goals. We pay large companies
-for things we may only want for a short moment, while they turn those repeated
-payments into more capital. If we do not use our resources carefully and leave
-room for a simpler life, we can become trapped in the machinery of consumption.
-The temporary pleasure of buying something can cost us time, savings, and the
-ability to work toward what we actually want.
+for short-lived comforts, while they turn those repeated payments into more
+capital. If we do not use our resources carefully and leave room for a simpler
+life, we can become trapped in the machinery of consumption. The temporary
+pleasure of buying something can cost us time, savings, and the ability to work
+toward what we actually want.
 
 The more useful questions are different: What do I want to produce? What do I
 want to learn? What do I genuinely want in my life, and which goals deserve my
@@ -158,15 +160,17 @@ limited time and resources? Spending our lives trying to keep up with somebody
 else's luxury and display means spending our own future on a race we did not
 choose.
 
-This week also brought a fund crisis in which people lost money and resources.
-I am not treating that as a reason to make a financial prediction, but it was a
-clear reminder that many services we depend on are controlled by somebody else.
+This week also brought a financial crisis in which people lost money and
+resources. I am not treating that as a reason to make a financial prediction.
+It was a clear reminder that many services we depend on are controlled by
+somebody else.
 If a company changes its terms, freezes access, or shuts down a service, users
 can be left with very little control over what they thought they owned or could
 rely on. That is why I do not want to become completely dependent on expensive
 products, convenient platforms, or any single provider. The more important
-parts of life should remain connected to our own skills, savings, projects, and
-choices.
+parts of life should remain under our own control. We should be able to keep
+learning, saving, building, and choosing without depending entirely on one
+provider.
 
 I do not think everyone has to live according to somebody else's taste. A
 simple life can leave room for maintaining a distribution, building software,
@@ -180,6 +184,22 @@ spend time on systems that are concrete. The profile either declares a real
 package, produces a real artifact, or exposes a real limitation. It is much
 harder to sustain a status performance when the source code and the boot
 behavior are both visible.
+
+I have attended many events across Turkey over the years, but we could never
+get a project mirror from the Linux Users Association (LKD). To me, that
+reflects a broader problem in Turkey. Despite repeatedly applying for speaker
+and trainer roles, I have often been met with more bureaucracy and labelled
+inexperienced.
+That response is connected to problems we experienced with distribution
+maintainers in the past. The deeper problem is that bureaucracy makes it
+difficult to take action.
+
+Our experience abroad has been different. Most of the applications we made with
+OnixOS were accepted, and the distribution is now listed on
+[DistroWatch](https://distrowatch.com/table.php?distribution=onixos). That is
+why I am putting more effort into this work here. The project can move forward
+through visible artifacts and concrete technical work, even when local processes
+keep adding friction.
 
 ## Two packages moving with the profiles
 
@@ -224,11 +244,10 @@ template paths from `.env`. The checked-in default listens on port `10000` and
 stores deployment state in separate data, incoming, and projects directories.
 
 The service runs as the dedicated `olfdm` user through systemd. Its API already
-has boundaries for creating projects, checking health, starting and stopping
-them, pulling or recloning Git sources, uploading artifacts, and deploying an
-artifact. In other words, this is not only a package containing a web page. It
-has a service account, persistent state directories, migrations, and an
-operational lifecycle.
+has boundaries for project creation, health checks, lifecycle control, Git
+source management, artifact uploads, and deployments. In other words, this is
+not only a package containing a web page. It has a service account, persistent
+state directories, migrations, and an operational lifecycle.
 
 The repository's own documentation still describes the project as incomplete,
 so I am treating it as an active package under development. Its practical use
@@ -246,3 +265,13 @@ That is a good place for OnixOS to be. The new profiles make the intended use
 cases concrete, while their TODO files keep the unfinished parts visible. The
 next step is not to call them complete. It is to keep turning each profile's
 assumptions into tested, documented behavior.
+
+## Sources
+
+- [OnixOS Kubernetes Edition](https://gitlab.com/onix-os/onixos-profiles/onixos-k8s-edition)
+- [OnixOS TV Edition](https://gitlab.com/onix-os/onixos-profiles/onixos-tv-edition)
+- [OnixOS Mobile Edition](https://gitlab.com/onix-os/onixos-profiles/onixos-mobile-edition)
+- [QVM CLI package](https://gitlab.com/onix-os/onixos-packages/qvm-cli)
+- [OLF Deployment Manager package](https://gitlab.com/onix-os/onixos-packages/olf-deployment-manager)
+- [Fon krizi, Google News search](https://news.google.com/search?q=fon%20krizi&hl=tr&gl=TR&ceid=TR%3Atr)
+- [OnixOS on DistroWatch](https://distrowatch.com/table.php?distribution=onixos)
