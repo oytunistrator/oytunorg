@@ -4,9 +4,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## Technology Polymath
+## Software Developer
 
-I bring together work across software and systems engineering, operating-system and programming-language development, web, mobile and desktop applications, game development, security, electronics, graphic design, and photography. I use this range to build software, platforms, games, and tools from idea through implementation.
+As a software developer, I work across operating systems and programming languages, web, mobile and desktop applications, and games. My broader experience also includes systems engineering, IT management and support, security, electronics, graphic design, and photography.
 
 ## On this page
 
