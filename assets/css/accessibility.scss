@@ -83,6 +83,7 @@ main .content {
 }
 
 #site-utility-controls #mode-toggle + .dropdown-menu {
+  padding: 0.35rem;
   background-color: var(--menu-bg);
   border-color: var(--menu-border-color);
   border-radius: 0.75rem;
@@ -99,14 +100,49 @@ main .content {
 }
 
 #site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.65rem;
+  border: 0;
   border-radius: 0.5rem;
-  color: var(--sidebar-muted-color);
-  font-size: 90%;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  line-height: 1.25;
+  text-align: left;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item > i[data-theme-mode] {
+  width: 1rem;
+  flex: 0 0 1rem;
+  text-align: center;
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item:hover,
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item:focus-visible,
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item.active,
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item:active {
+  background-color: var(--sidebar-hover-bg);
+  color: var(--sidebar-active-color);
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: -2px;
 }
 
 #site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item.active {
-  color: var(--menu-active-color);
   font-weight: 600;
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item.active::after {
+  margin-left: auto;
+  color: var(--link-color);
+  content: '✓';
+  font-size: 0.8rem;
 }
 
 #site-utility-controls > aside[aria-label='Scroll to Top'] {
