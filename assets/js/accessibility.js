@@ -13,6 +13,32 @@
   const storageKey = 'oytun-accessibility-settings';
   const defaults = { textSize: 100, highContrast: false, reduceMotion: false };
 
+  const purgeChirpyCaches = () => {
+    if (!('caches' in window)) {
+      return Promise.resolve();
+    }
+
+    return window.caches.keys().then((cacheNames) => Promise.all(
+      cacheNames
+        .filter((cacheName) => cacheName.startsWith('chirpy-'))
+        .map((cacheName) => window.caches.delete(cacheName))
+    )).catch(() => {});
+  };
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      const chirpyRegistrations = registrations.filter((registration) => [
+        registration.active,
+        registration.waiting,
+        registration.installing
+      ].some((worker) => worker && new URL(worker.scriptURL).pathname.endsWith('/sw.min.js')));
+
+      return Promise.all(chirpyRegistrations.map((registration) => registration.unregister()));
+    }).then(purgeChirpyCaches).catch(purgeChirpyCaches);
+  } else {
+    purgeChirpyCaches();
+  }
+
   if (!toggle || !panel || !close || !textSize || !textSizeValue || !highContrast || !reduceMotion) {
     return;
   }
@@ -20,7 +46,8 @@
   const utilityControls = document.getElementById('site-utility-controls');
   if (modeToggle && utilityControls) {
     modeToggle.setAttribute('aria-label', 'Switch light and dark mode');
-    utilityControls.insertBefore(modeToggle, toggle);
+    const themeControl = modeToggle.closest('.btn-group') || modeToggle;
+    utilityControls.insertBefore(themeControl, toggle);
   }
 
   if (scrollToTop && utilityControls) {

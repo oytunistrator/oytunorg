@@ -72,6 +72,43 @@ main .content {
   line-height: 1;
 }
 
+.accessibility-widget #mode-toggle > i[data-theme-mode] {
+  display: none;
+}
+
+:root[data-bs-theme='light'][data-theme-persisted] .accessibility-widget #mode-toggle > i[data-theme-mode='light'],
+:root[data-bs-theme='dark'][data-theme-persisted] .accessibility-widget #mode-toggle > i[data-theme-mode='dark'],
+:root:not([data-theme-persisted]) .accessibility-widget #mode-toggle > i[data-theme-mode='system'] {
+  display: block;
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu {
+  background-color: var(--menu-bg);
+  border-color: var(--menu-border-color);
+  border-radius: 0.75rem;
+  box-shadow: var(--menu-shadow-color) 0 1px 4px;
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  animation: 0.2s ease-out 0s 1 normal none running menu-pop;
+  left: auto !important;
+  right: 0 !important;
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item {
+  border-radius: 0.5rem;
+  color: var(--sidebar-muted-color);
+  font-size: 90%;
+}
+
+#site-utility-controls #mode-toggle + .dropdown-menu .dropdown-item.active {
+  color: var(--menu-active-color);
+  font-weight: 600;
+}
+
 #site-utility-controls > aside[aria-label='Scroll to Top'] {
   display: flex;
   align-items: center;
