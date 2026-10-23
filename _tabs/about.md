@@ -4,9 +4,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## Profile
+## Technology Polymath
 
-My work does not fit a single title. I work as a software and systems specialist, operating-system developer, programming-language developer, full-stack web and application developer, game developer, technical lead, and project manager. My expertise also spans application security, electronics, graphic design, and photography. I bring these areas together to build software, platforms, games, and tools from idea through implementation.
+I bring together work across software and systems engineering, operating-system and programming-language development, web, mobile and desktop applications, game development, security, electronics, graphic design, and photography. I use this range to build software, platforms, games, and tools from idea through implementation.
 
 ## On this page
 
@@ -81,6 +81,8 @@ My work does not fit a single title. I work as a software and systems specialist
 See the [full project list on LinkedIn](https://www.linkedin.com/in/oytunistrator/details/projects/) for additional work and publications.
 
 ## Professional experience
+
+Across my career, I have worked mainly through freelance and remote engagements, alongside some full-time roles. I have also provided IT management and IT support for several companies through freelance work.
 
 - **Project Manager, OnixOS** - January 2021 to present.
 - **Senior Python Developer and Senior Software Developer Team Lead, REA Australia** - 2024 to 2025. Built Python backend services for rental-property workflows and coordinated testing, backend troubleshooting, code reviews, and sprint planning.
