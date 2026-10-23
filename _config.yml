@@ -20,7 +20,7 @@
 
 title: Oytunistrator
 email: info@oytun.org
-description: "Application/Web/Game Developer"
+description: "Software, systems, OS, language, web, application and game development; security, electronics and design."
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://oytun.org" # the base hostname & protocol for your site, e.g. http://example.com
@@ -48,7 +48,7 @@ social:
     - https://github.com/oytunistrator # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/oytunistrator/?isSelfProfile=true
+    - https://www.linkedin.com/in/oytunistrator/
     - https://gitlab.com/oytunistrator
 
 

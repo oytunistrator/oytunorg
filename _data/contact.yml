@@ -5,11 +5,19 @@
 
 - type: linkedin
   icon: "fab fa-linkedin"
-  url: "https://www.linkedin.com/in/oytunistrator/?isSelfProfile=true"
+  url: "https://www.linkedin.com/in/oytunistrator/"
 
 - type: gitlab
   icon: "fab fa-gitlab"
   url: "https://gitlab.com/oytunistrator"
+
+- type: onixos
+  icon: "fas fa-desktop"
+  url: "https://onix-project.com/"
+
+- type: o-language
+  icon: "fas fa-code"
+  url: "https://onix-project.com/O_Language"
 
 #- type: twitter
 #  icon: "fab fa-twitter"
