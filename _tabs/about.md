@@ -109,9 +109,4 @@ Earlier roles included PHP development at USTEK RFID, eleman.net, and NATRON Dan
 
 ## Profiles and contact
 
-- [GitHub](https://github.com/oytunistrator)
-- [GitLab](https://gitlab.com/oytunistrator)
-- [LinkedIn](https://www.linkedin.com/in/oytunistrator/)
-- [OnixOS](/onixos/)
-- [O Language](/olanguage/)
-- [Email](mailto:info@oytun.org)
+[GitHub](https://github.com/oytunistrator) | [GitLab](https://gitlab.com/oytunistrator) | [LinkedIn](https://www.linkedin.com/in/oytunistrator/) | [Email](mailto:info@oytun.org)
