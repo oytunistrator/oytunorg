@@ -12,6 +12,7 @@ As a software developer, I work across operating systems and programming languag
 
 - [Areas of expertise](#areas-of-expertise)
 - [Selected projects](#selected-projects)
+- [Homelab](#homelab)
 - [Professional experience](#professional-experience)
 - [Education](#education)
 - [Technical background](#technical-background)
@@ -79,6 +80,10 @@ As a software developer, I work across operating systems and programming languag
 - **Root Dergisi:** Published articles in several sections of the magazine.
 
 See the [full project list on LinkedIn](https://www.linkedin.com/in/oytunistrator/details/projects/) for additional work and publications.
+
+## Homelab
+
+I run a homelab with separate production and development environments. Both servers use XCP-ng; a four-node Lenovo ThinkCentre M910q cluster runs Docker workloads. An Intel NUC Pro handles web-facing services, a Beelink Mini runs the firewall, and a QNAP TS-216G NAS provides mirrored RAID 1 storage. I use the lab to develop and test operating systems, applications, virtual machines, network configurations, and deployment workflows. Read the [full homelab update](/p/homelab-update-and-what-is-ipfs/) for the current setup and hardware details.
 
 ## Professional experience
 
