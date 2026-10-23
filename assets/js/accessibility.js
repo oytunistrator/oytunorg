@@ -17,6 +17,11 @@
   const updateBackToTopVisibility = () => {
     if (backToTopContainer && backToTop) {
       const isVisible = window.scrollY > 200;
+
+      if (!isVisible && document.activeElement === backToTop) {
+        backToTop.blur();
+      }
+
       backToTopContainer.classList.toggle('is-visible', isVisible);
       backToTopContainer.setAttribute('aria-hidden', String(!isVisible));
       backToTop.tabIndex = isVisible ? 0 : -1;
