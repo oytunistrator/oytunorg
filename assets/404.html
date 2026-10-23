@@ -1,0 +1,23 @@
+---
+layout: page
+title: "404: Page not found"
+permalink: /404.html
+---
+
+<div class="not-found-page">
+  <p class="not-found-code" aria-label="Error 404">404</p>
+  <p class="not-found-kicker"><i class="fas fa-compass not-found-icon" aria-hidden="true"></i> Page not found, explorer</p>
+  <h1>Well, this is awkward.</h1>
+  <p>We checked the logs, looked behind the router, and asked the cache. This page is still missing.</p>
+  <p class="not-found-message" id="not-found-message" role="status" aria-live="polite">The search party is ready. It brought snacks and absolutely no useful clues.</p>
+
+  <div class="not-found-actions">
+    <button class="not-found-action" id="not-found-search" type="button">Search again</button>
+    <button class="not-found-action" id="not-found-music" type="button" aria-pressed="false">Play the tiny 404 tune</button>
+    <a class="not-found-action" href="/">Take me home</a>
+  </div>
+
+  <p class="not-found-footnote">No pages were harmed. One URL may need supervision.</p>
+</div>
+
+<script src="{{ '/assets/js/404.js' | relative_url }}" defer></script>

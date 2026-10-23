@@ -1,0 +1,146 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* Use clear text links across post and page content without button styling. */
+.content a:not(.img-link):not(.anchor) {
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.16em;
+  transition: color 140ms ease, text-decoration-thickness 140ms ease;
+}
+
+.content a:not(.img-link):not(.anchor):hover {
+  border-bottom: 0;
+  text-decoration-thickness: 0.12em;
+}
+
+.content a:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 3px;
+}
+
+/* Keep the profile links easy to scan without adding button-like styling. */
+.content ul.profile-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.content ul.profile-links li {
+  margin: 0.35rem 0;
+}
+
+.content ul.profile-links i {
+  display: inline-block;
+  width: 1.25em;
+  margin-right: 0.25em;
+  color: var(--text-muted-color);
+  text-align: center;
+}
+
+/* Keep the 404 playful, but let the content and actions stay simple. */
+.not-found-page {
+  max-width: 40rem;
+  margin: clamp(3rem, 12vh, 8rem) auto;
+  padding: 1rem 0 2rem;
+  text-align: center;
+}
+
+.not-found-code {
+  margin: 0 0 0.5rem;
+  color: var(--link-color);
+  font-size: clamp(5rem, 16vw, 8rem);
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 0.95;
+}
+
+.not-found-icon {
+  margin-right: 0.3rem;
+  color: var(--text-muted-color);
+  font-size: 0.9rem;
+}
+
+.not-found-kicker {
+  margin: 0.7rem 0 1rem;
+  color: var(--text-muted-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.not-found-page h1 {
+  margin: 0.25rem auto 0.9rem;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  line-height: 1.25;
+}
+
+.not-found-page > p:not(.not-found-code) {
+  max-width: 32rem;
+  margin: 0.5rem auto;
+  line-height: 1.65;
+}
+
+.not-found-page .not-found-message {
+  min-height: 1.65em;
+  margin-top: 1rem;
+  color: var(--text-muted-color);
+  font-style: italic;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.not-found-action {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--link-color);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  cursor: pointer;
+}
+
+.not-found-action:hover {
+  color: #d2603a !important;
+  text-decoration-thickness: 0.12em;
+}
+
+.not-found-action:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 3px;
+}
+
+.not-found-action:disabled {
+  color: var(--text-muted-color);
+  cursor: wait;
+}
+
+.not-found-page .not-found-footnote {
+  margin-top: 1.5rem !important;
+  color: var(--text-muted-color);
+  font-size: 0.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content a,
+  .not-found-action {
+    transition: none;
+  }
+}
