@@ -6,6 +6,14 @@ order: 4
 
 I have been actively involved in the web development industry for many years, creating a wide range of applications, software, and games across various domains. With a deep understanding of web technologies and broad programming expertise, the information below is intended to be clear and comprehensive.
 
+## Project and profile links
+
+- [OnixOS](https://onix-project.com/): project site.
+- [O Language](https://onix-project.com/O_Language): language page and documentation.
+- [GitHub](https://github.com/oytunistrator): code and activity.
+- [GitLab](https://gitlab.com/oytunistrator): project repositories.
+- [LinkedIn](https://www.linkedin.com/in/oytunistrator/?isSelfProfile=true): professional profile.
+
 # Programming Languages
 
 ## Custom Developed Languages

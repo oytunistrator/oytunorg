@@ -3,6 +3,14 @@
 - type: github
   icon: "fab fa-github"
 
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/oytunistrator/?isSelfProfile=true"
+
+- type: gitlab
+  icon: "fab fa-gitlab"
+  url: "https://gitlab.com/oytunistrator"
+
 #- type: twitter
 #  icon: "fab fa-twitter"
 
@@ -18,10 +26,6 @@
 # - type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
-#
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
 #
 - type: stack-overflow
   icon: 'fab fa-stack-overflow'
