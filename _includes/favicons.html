@@ -1,0 +1,20 @@
+<!--
+  The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
+  Generated from the same profile image configured as the site avatar.
+-->
+
+{% capture favicon_path %}{{ '/assets/img/favicons' | relative_url }}{% endcapture %}
+{% capture favicon_version %}{{ site.time | date: '%s' }}{% endcapture %}
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/apple-touch-icon.png?v={{ favicon_version }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path }}/favicon-32x32.png?v={{ favicon_version }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ favicon_path }}/favicon-16x16.png?v={{ favicon_version }}">
+{% if site.pwa.enabled %}
+  <link rel="manifest" href="{{ favicon_path }}/site.webmanifest?v={{ favicon_version }}">
+{% endif %}
+<link rel="shortcut icon" href="{{ favicon_path }}/favicon.ico?v={{ favicon_version }}">
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+<meta name="application-name" content="{{ site.title }}">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="{{ favicon_path }}/browserconfig.xml?v={{ favicon_version }}">
+<meta name="theme-color" content="#ffffff">
