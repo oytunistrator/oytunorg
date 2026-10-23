@@ -15,8 +15,11 @@
   const defaults = { textSize: 100, highContrast: false, reduceMotion: false };
 
   const updateBackToTopVisibility = () => {
-    if (backToTopContainer) {
-      backToTopContainer.hidden = window.scrollY <= 200;
+    if (backToTopContainer && backToTop) {
+      const isVisible = window.scrollY > 200;
+      backToTopContainer.classList.toggle('is-visible', isVisible);
+      backToTopContainer.setAttribute('aria-hidden', String(!isVisible));
+      backToTop.tabIndex = isVisible ? 0 : -1;
     }
   };
 

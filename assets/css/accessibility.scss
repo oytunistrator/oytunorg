@@ -149,10 +149,16 @@ main .content {
   display: flex;
   align-items: center;
   margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.5rem);
+  transition: opacity 180ms ease, transform 180ms ease;
 }
 
-#site-utility-controls > aside[aria-label='Scroll to Top'][hidden] {
-  display: none;
+#site-utility-controls > aside[aria-label='Scroll to Top'].is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 #site-utility-controls #back-to-top {
@@ -164,7 +170,6 @@ main .content {
   visibility: visible;
   opacity: 1;
   transform: none;
-  transition: none;
 }
 
 #site-utility-controls #back-to-top i {
