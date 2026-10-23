@@ -151,6 +151,10 @@ main .content {
   margin: 0;
 }
 
+#site-utility-controls > aside[aria-label='Scroll to Top'][hidden] {
+  display: none;
+}
+
 #site-utility-controls #back-to-top {
   display: grid;
   position: static;

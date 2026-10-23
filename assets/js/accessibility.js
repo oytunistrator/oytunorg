@@ -10,8 +10,18 @@
   const highContrast = document.getElementById('accessibility-high-contrast');
   const reduceMotion = document.getElementById('accessibility-reduce-motion');
   const backToTop = document.getElementById('back-to-top');
+  const backToTopContainer = backToTop?.closest('aside[aria-label="Scroll to Top"]');
   const storageKey = 'oytun-accessibility-settings';
   const defaults = { textSize: 100, highContrast: false, reduceMotion: false };
+
+  const updateBackToTopVisibility = () => {
+    if (backToTopContainer) {
+      backToTopContainer.hidden = window.scrollY <= 200;
+    }
+  };
+
+  updateBackToTopVisibility();
+  window.addEventListener('scroll', updateBackToTopVisibility, { passive: true });
 
   const purgeChirpyCaches = () => {
     if (!('caches' in window)) {
