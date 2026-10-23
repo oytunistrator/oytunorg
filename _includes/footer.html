@@ -21,6 +21,53 @@
     </div>
   </footer>
 
+  <div id="site-utility-controls" class="accessibility-widget">
+    <button
+      id="accessibility-toggle"
+      class="accessibility-toggle"
+      type="button"
+      aria-label="Accessibility settings"
+      aria-expanded="false"
+      aria-controls="accessibility-panel"
+    >
+      <i class="fas fa-universal-access" aria-hidden="true"></i>
+    </button>
+
+    <section
+      id="accessibility-panel"
+      class="accessibility-panel"
+      role="dialog"
+      aria-labelledby="accessibility-title"
+      hidden
+    >
+      <div class="accessibility-panel-heading">
+        <h2 id="accessibility-title">Accessibility settings</h2>
+        <button id="accessibility-close" type="button" aria-label="Close accessibility settings">
+          <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <label for="accessibility-text-size">Text size</label>
+      <div class="accessibility-text-size">
+        <button id="accessibility-text-decrease" type="button" aria-label="Decrease text size">A−</button>
+        <input id="accessibility-text-size" type="range" min="100" max="150" step="10" value="100">
+        <button id="accessibility-text-increase" type="button" aria-label="Increase text size">A+</button>
+        <output id="accessibility-text-size-value" for="accessibility-text-size" aria-live="polite">100%</output>
+      </div>
+
+      <label class="accessibility-option" for="accessibility-high-contrast">
+        <input id="accessibility-high-contrast" type="checkbox">
+        <span>High contrast</span>
+      </label>
+      <label class="accessibility-option" for="accessibility-reduce-motion">
+        <input id="accessibility-reduce-motion" type="checkbox">
+        <span>Reduce motion</span>
+      </label>
+
+      <button id="accessibility-reset" class="accessibility-reset" type="button">Reset settings</button>
+    </section>
+  </div>
+
   <style>
     footer p:last-child::before {
       content: "";
@@ -52,6 +99,8 @@
       margin: 0 !important;
     }
   </style>
+
+  <script src="{{ '/assets/js/accessibility.js' | relative_url }}" defer></script>
 
   <!-- Matomo -->
   <script>
