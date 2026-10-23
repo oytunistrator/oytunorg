@@ -89,16 +89,18 @@ I run a homelab with separate production and development environments. Both serv
 
 Across my career, I have worked mainly through freelance and remote engagements, alongside some full-time roles. I have also provided IT management and IT support for several companies through freelance work.
 
-- **Project Manager, OnixOS** - January 2021 to present.
-- **Senior Python Developer and Senior Software Developer Team Lead, REA Australia** - 2024 to 2025. Built Python backend services for rental-property workflows and coordinated testing, backend troubleshooting, code reviews, and sprint planning.
-- **Senior Software Developer, Freelance** - January 2020 to December 2025. Delivered full-stack web development for international clients, from backend and frontend work to databases, APIs, and deployment.
-- **Game Developer, IDreams** - January 2018 to August 2025. Contributed to mobile and desktop game projects, gameplay features, and development tooling.
-- **Senior Developer, Ses Data İletişim Hizmetleri** - November 2022 to June 2024. Developed backend and full-stack features for a telecommunications platform using PHP, Laravel, and Vue.js.
-- **Software Engineer, X137 Labs** - September 2021 to February 2022. Developed and documented Node.js and TypeScript backend services for a SaaS platform.
-- **Frontend Developer, Mopaş** - November 2018 to June 2021. Built e-commerce interfaces with Vue.js and React and integrated payment providers and third-party APIs.
-- **Web Developer, Estetik International Health Group** - January 2017 to December 2018. Built healthcare web applications and worked on appointment scheduling and CRM integrations.
+Freelance and contract engagements overlapped with some full-time roles, so these dates are concurrent rather than consecutive.
 
-Earlier roles included PHP development at USTEK RFID, eleman.net, and NATRON Danışmanlık, as well as web design at Reksa Reklam.
+- **Project Manager, Operating-System Development** - January 2021 to present.
+- **Senior Python Developer and Senior Software Developer Team Lead** - 2024 to 2025. Built Python backend services for rental-property workflows and coordinated testing, backend troubleshooting, code reviews, and sprint planning.
+- **Senior Software Developer, Freelance** - January 2020 to December 2025. Delivered full-stack web development for international clients, from backend and frontend work to databases, APIs, and deployment.
+- **Game Developer, Contract** - January 2018 to August 2025. Contributed to mobile and desktop game projects, gameplay features, and development tooling.
+- **Senior Developer** - November 2022 to June 2024. Developed backend and full-stack features for a telecommunications platform using PHP, Laravel, and Vue.js.
+- **Software Engineer** - September 2021 to February 2022. Developed and documented Node.js and TypeScript backend services for a SaaS platform.
+- **Frontend Developer** - November 2018 to June 2021. Built e-commerce interfaces with Vue.js and React and integrated payment providers and third-party APIs.
+- **Web Developer** - January 2017 to December 2018. Built healthcare web applications and worked on appointment scheduling and CRM integrations.
+
+Earlier roles included PHP development and web design.
 
 ## Education
 
