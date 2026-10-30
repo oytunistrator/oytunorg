@@ -25,6 +25,8 @@ We have also prepared separate repositories for the build system, package source
 
 The new versioning and image layout are now being put in place, but that does not mean every development image is ready to use. The recent development versions have not yet been fully tested. There may be bugs, and a build artifact still needs to be checked on the target hardware before it can be treated as a working release. The immediate task is to validate the pipeline and the images it produces, then use the results to fix what fails.
 
+Anyone who wants to try the current development releases can find them at [pub.onix-project.com](https://pub.onix-project.com/). These images are for evaluation, and may still contain bugs.
+
 ## O Language is becoming part of the platform workflow
 
 O Language is a system-oriented functional language with its own compiler, bytecode, virtual machine, package format, and command-line tools. The recent work in its repository focused on web project tooling: commands for setting up projects, generating typed routes, and loading a project through a shared loader. Earlier runtime work also exposed request-scoped information to web handlers and converted missing host values into language-level errors.
