@@ -63,4 +63,10 @@ The recent [O Language](https://gitlab.com/olanguage/olang) work connects its we
 
 I am also working on a license for software intended to remain usable in local and battery-powered settings. That work is separate from the WebUI and language tooling, but it asks a related question: how much can we keep useful and under the user's control when a central service or continuous connection is not available?
 
-For now, the homelab is a collection of useful pieces rather than a finished system. I have reduced a set of old public profiles, brought more services into a local environment, and made a small communication network for emergencies. OnixOS and O Language are progressing alongside it, with work still to validate and refine. The next step is to keep improving these systems, keep their limits visible, and avoid handing out more personal data by default.
+## What comes next for OnixOS
+
+The [2612-ELTS release milestone](https://gitlab.com/onix-os/onix-build-system/-/milestones/1#tab-issues) currently shows seven completed work items, no open or ongoing items, ten merged merge requests, and no release recorded yet. Its completed scope includes new profiles, AI packaging, a Calamares installer, an update manager, and clean, isolated build pipelines. That is substantial progress, but closing the milestone items is not the same as shipping a release.
+
+We have spent enough time away from the work. I am returning my attention to OnixOS and the release, and I will finish the testing before calling it ready. The next step is to verify that the completed work functions together, resolve anything testing uncovers, and prepare the 2612-ELTS release. The milestone is a useful map of what has been done; the tests and release artifacts will tell us whether it is ready to use.
+
+For now, the homelab is a collection of useful pieces rather than a finished system. I have reduced a set of old public profiles, brought more services into a local environment, and made a small communication network for emergencies. From now on, I want to keep most of my life local and go online only when I need to. The digital detox has been good for me. I have been turning more of my attention to books and personal development, and I want to keep that space in my life while I finish this work.
