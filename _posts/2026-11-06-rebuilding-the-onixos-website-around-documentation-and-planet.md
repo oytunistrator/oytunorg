@@ -9,11 +9,7 @@ toc: true
 
 The OnixOS website now has to explain more than how to download a Linux distribution. It needs to help people choose an edition, install and maintain a system, understand the build and package repositories, and find out what is changing in O Language. It also needs to make community work visible.
 
-I have been rebuilding the project's web presence around those needs. This pass changes the page structure and content as well as the visual design. The screenshot below shows the new homepage, where the distribution, its profiles, the documentation, and O Language appear together.
-
-![The OnixOS homepage after the website refresh. Its main navigation separates Distribution, Guides, Community, and Project; the hero has download and documentation links, an O Language example, and a summary of the install profiles.](/assets/img/posts/onixos-website-homepage.png)
-
-*The homepage introduces OnixOS and O Language in the same opening view, then leads into the installation profiles and documentation.*
+I have been rebuilding the project's web presence around those needs. This pass changes the page structure and content as well as the visual design.
 
 ## The technology behind the site
 
