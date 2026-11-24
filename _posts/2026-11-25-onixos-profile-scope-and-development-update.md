@@ -118,3 +118,22 @@ We previously announced on the forum that we were looking for developer support.
 Anyone who wants to contribute can contact the core team through the forum's [OnixOS development and contributor support thread](https://forum.onix-project.com/d/9-onix-os-gelistirme-sureci-icin-dev-ekibi-ve-katkici-destegi/2) or the Telegram groups. The documentation above is a starting point for people who want to learn profile or package development. A small contribution that is completed and maintained is more valuable than another profile idea by itself.
 
 The next step for OnixOS is to validate the profiles we already have against real installation and usage scenarios, rather than adding more profiles. Narrowing the scope is a technical decision I made to establish a sustainable maintenance routine and close the remaining tests before `2612-ELTS`.
+
+## References
+
+- [OnixOS profile development documentation](https://onix-project.com/docs/profile-development/)
+- [OnixOS package build documentation](https://onix-project.com/docs/package-builds/)
+- [OnixOS build system profile list](https://gitlab.com/onix-os/onix-build-system/-/blob/main/sources/profiles.list)
+- [OnixOS build system architecture configuration](https://gitlab.com/onix-os/onix-build-system/-/blob/main/sources/architectures.conf)
+- [Core profile source](https://gitlab.com/onix-os/onixos-profiles/core)
+- [Core profile Makefile](https://gitlab.com/onix-os/onixos-profiles/core/-/blob/main/Makefile)
+- [OnixOS base package source list](https://gitlab.com/onix-os/onix-build-system/-/blob/main/sources/base.list)
+- [Calamares Onix package](https://gitlab.com/onix-os/onixos-packages/calamares-onix)
+- [OnixOS CLI installer package](https://gitlab.com/onix-os/onixos-packages/onixos-cli-installer)
+- [OnixOS Server profile and installer](https://gitlab.com/onix-os/onixos-profiles/server)
+- [O Language repository](https://gitlab.com/olanguage/olang), with commits for [centralized web project loading](https://gitlab.com/olanguage/olang/-/commit/eb2301c), [typed route scaffolding](https://gitlab.com/olanguage/olang/-/commit/c5451b2), and [command progress output](https://gitlab.com/olanguage/olang/-/commit/866a79c)
+- Package examples: [onix-doomsay](https://gitlab.com/onix-os/onixos-packages/onix-doomsay), [qvm-cli](https://gitlab.com/onix-os/onixos-packages/qvm-cli), and [olang](https://gitlab.com/onix-os/onixos-packages/olang)
+- [OnixOS GitLab issue board](https://gitlab.com/groups/onix-os/-/boards#/)
+- [2612-ELTS milestone issues](https://gitlab.com/onix-os/onix-build-system/-/milestones/1#tab-issues)
+- [OnixOS developer and contributor support thread](https://forum.onix-project.com/d/9-onix-os-gelistirme-sureci-icin-dev-ekibi-ve-katkici-destegi/2)
+- [ArchWiki PKGBUILD guide](https://wiki.archlinux.org/title/PKGBUILD)
